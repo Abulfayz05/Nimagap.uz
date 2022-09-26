@@ -1,0 +1,163 @@
+.news {
+  margin-top: 50px;
+}
+
+.head {
+  display: flex;
+  justify-content: space-between;
+}
+
+.head h3 {
+  font-size: 23px;
+  color: #4a4a4a;
+  margin: 12px 0px;
+}
+.head h4 {
+  font-size: 23px;
+  color: #8c8c8c;
+  margin: 12px 0px;
+  font-weight: 500;
+}
+.news h6 {
+  font-size: 23px;
+  color: #4a4a4a;
+  margin: 12px 0px;
+}
+
+.news h6::before {
+  content: " ";
+  margin-right: 5px;
+  height: 16px;
+  display: inline-block;
+  border-left: 3px solid #e91802;
+}
+.gridmain {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  height: 350px;
+  margin-bottom: 25px;
+  grid-gap: 7px;
+  width: 100%;
+  grid-template-areas:
+    "main main card_1 card_3 "
+    "main main card_2  card_4";
+}
+
+@media (max-width:1007px){
+  .gridmain{
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    height: 100vh;
+    grid-template-areas:
+    "main main "
+    "main main "
+    "card_1 card_2" 
+    
+    "card_3  card_4";
+  }
+
+  .card_1{
+    height: 250px;
+    
+  }
+  .card_3{
+    height: 250px;
+    
+  }
+
+
+}
+
+.main {
+  position: relative;
+  grid-area: main;
+ 
+}
+.title {
+  position: absolute;
+  bottom: 0;
+  background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
+  color: #fff;
+  padding: 15% 0.75rem 0rem 0.75rem;
+}
+
+.title h3 {
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0;
+}
+.title h4 {
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.title p {
+  margin-top: 0.5rem;
+  font-size: 1.1rem;
+  line-height: 22px;
+  color: #d3d3d3d3;
+}
+
+.card_1 {
+  
+  position: relative;
+  grid-area: card_1;
+}
+.card_2 {
+  position: relative;
+  grid-area: card_2;
+}
+.card_3 {
+  position: relative;
+  grid-area: card_3;
+}
+.card_4 {
+  position: relative;
+  grid-area: card_4;
+}
+
+.section {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* .ads{
+  margin-left: 10px;
+  width: 400px;
+  background-color: #333333;
+} */
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 20px;
+  /* width: 80%; Ads qushilganda joylashtiraman*/
+}
+
+.card {
+  width: 100%;
+  position: relative;
+}
+
+.item {
+  padding-top: 15px;
+}
+.item a {
+  font-size: 18px;
+  font-weight: 600;
+  color: #161b3d;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.4;
+  letter-spacing: 0;
+}
+
+.item p {
+  color: #333333;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.6;
+}
