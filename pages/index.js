@@ -2,8 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
-import { CopyToClipboard } from "react-copy-to-clipboard";
-import { IoAlertCircle } from "react-icons/io5";
+
 import { NextSeo } from "next-seo";
 import Script from "next/script";
 import CurrencyFormat from "react-currency-format";
@@ -23,21 +22,21 @@ export async function getServerSideProps() {
 export default function Home({ data }) {
   const [curs, setCurs] = useState("1");
   console.log(curs);
-  var CurrencyFormat = require("react-currency-format");
 
   return (
     <div className={styles.container}>
-      <NextSeo title="Dollar kursi bugun" description="Dollar kursi bugun" />
+      <NextSeo
+        title="Dollar kursi bugun"
+        description="Dollar kursi bugungi narxi,100 dollar kursi bugun toshkent, dollar
+          kurs o'zbekiston"
+      />
       <Head>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main className={styles.main}>
         <Image src="/partner.svg" width={220} height={100} />
-        <h1 className={styles.title}>
-          Dollar kursi bugungi narxi,100 dollar kursi bugun toshkent, dollar
-          kurs o&apos;zbekiston
-        </h1>
+        <h1 className={styles.title}>Dollar kursi bugungi narxi</h1>
 
         <div className={styles.grid}>
           <div className={styles.box}>
