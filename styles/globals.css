@@ -15,26 +15,32 @@ a {
   box-sizing: border-box;
 }
 
-.container{
-  max-width: 1440px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0 86px;
+
+
+.copy{
+  background-color: #6492ee;
+}
+.copied{
+  background-color: #0F9521;
 }
 
-@media  (max-width: 1366px) {
-  .container{
-    padding: 0 43px;
 
+
+
+.cascoon-app {
+   display: flex;
+   justify-content: center;
+
+
+}
+
+
+/* @media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
   }
-}
-@media  (max-width: 1007px) {
-  .container{
-    padding: 0 22px;
-
+  body {
+    color: white;
+    background: black;
   }
-}
-
-
-
-
+} */

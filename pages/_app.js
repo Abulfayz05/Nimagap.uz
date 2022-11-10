@@ -1,11 +1,16 @@
 import "../styles/globals.css";
-import Layout from "../Component/Layout";
+import Gtag from "../components/gtag";
+import Adsense from "../components/adsense";
+import Head from "next/head";
 
 function MyApp({ Component, pageProps }) {
   return (
-    <Layout >
+    <>
+   
+      {/* <Adsense /> */}
+      <Gtag />
       <Component {...pageProps} />
-    </Layout>
+    </>
   );
 }
 
