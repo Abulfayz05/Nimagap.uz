@@ -35,7 +35,7 @@ export default function Home({ data }) {
       </Head>
 
       <main className={styles.main}>
-        <Image src="/partner.svg" width={220} height={100} />
+        <Image src="/partner.svg" width={220} height={100} alt="bank"/>
         <h1 className={styles.title}>Dollar kursi bugungi narxi</h1>
 
         <div className={styles.grid}>
