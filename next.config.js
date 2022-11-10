@@ -10,7 +10,7 @@ module.exports = {
   },
 
   images: {
-    domains: ["admin.uzbekvoice.ai"],
+    domains: ["admin.nimagap.uz"],
   },
 
   publicRuntimeConfig: {

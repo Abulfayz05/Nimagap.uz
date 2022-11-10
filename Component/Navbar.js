@@ -7,7 +7,7 @@ export default function Navbar() {
       <div className={styles.container}>
         <div className={styles.logo}>
           <Link href="/">
-            <a>NimaGap</a>
+            <a><img className={styles.logo} src="/logo.png" alt="nimgap.uz"></img></a>
           </Link>
         </div>
 

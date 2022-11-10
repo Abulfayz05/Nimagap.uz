@@ -1,5 +1,4 @@
 .header {
-  height: 65px;
   background-color:  black;
   color: #fff;
   
@@ -7,6 +6,7 @@
 
 .container{
   display: flex;
+  height: 65px;
   align-items: center;
   justify-content: space-between;
   max-width: 1440px;
@@ -15,9 +15,11 @@
   padding: 0 86px;
 }
 
-.logo h3{
-font-size: 20px;
-font-weight: 500;
+.logo {
+width: auto;
+height: 40px;
+
+
 }
 
 .menu ul {

@@ -39,9 +39,16 @@
   margin-bottom: 25px;
   grid-gap: 7px;
   width: 100%;
-  grid-template-areas:
+  /* grid-template-areas:
     "main main card_1 card_3 "
-    "main main card_2  card_4";
+    "main main card_2  card_4"; */
+}
+
+.gridmain .card:nth-child(1){
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
 }
 
 @media (max-width:1007px){
@@ -49,22 +56,15 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(4, 1fr);
     height: 100vh;
-    grid-template-areas:
+    /* grid-template-areas:
     "main main "
     "main main "
     "card_1 card_2" 
     
-    "card_3  card_4";
+    "card_3  card_4"; */
   }
 
-  .card_1{
-    height: 250px;
-    
-  }
-  .card_3{
-    height: 250px;
-    
-  }
+
 
 
 }
@@ -76,6 +76,7 @@
 }
 .title {
   position: absolute;
+  width: 100%;
   bottom: 0;
   background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.8));
   color: #fff;
@@ -87,6 +88,27 @@
   font-weight: 500;
   margin: 0;
 }
+
+.card:nth-child(1) h4{
+  font-size: 32px;
+  font-weight: 500;
+  margin: 0
+}
+.card:nth-child(2) p{
+  display: none;
+}
+.card:nth-child(3) p{
+  display: none;
+}
+.card:nth-child(4) p{
+  display: none;
+}
+.card:nth-child(5) p{
+  display: none;
+}
+
+
+
 .title h4 {
   font-size: 20px;
   font-weight: 500;
