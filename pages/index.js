@@ -58,7 +58,7 @@ export default function Home({ data }) {
                       displayType={"text"}
                       thousandSeparator={true}
                     />{" "}
-                    so&apos;{" "}
+                    so&apos;m{" "}
                   </p>
                 </>
               ))}
