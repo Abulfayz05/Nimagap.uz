@@ -77,7 +77,7 @@ export default function Home({ data }) {
           ></video>
                <video
             poster={getAssetURL("edd4112e-68fe-405f-87c2-d78113465d54")}
-            src="/socail"
+            src="/socail.mp4"
             controls
             muted
             loop
