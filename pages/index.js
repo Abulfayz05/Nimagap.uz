@@ -2,6 +2,7 @@ import Head from "next/head";
 import Image from "next/image";
 import { useState } from "react";
 import styles from "../styles/Home.module.css";
+import { getAssetURL } from "../utils/get-asset-url";
 
 import { NextSeo } from "next-seo";
 import Script from "next/script";
@@ -65,6 +66,16 @@ export default function Home({ data }) {
           </div>
         </div>
         <h4>Manba: O&apos;zbekiston Respublikasi Markaziy banki </h4>
+        <video
+            poster={getAssetURL("edd4112e-68fe-405f-87c2-d78113465d54")}
+            src={getAssetURL("6f95d5eb-aca2-4948-b626-d0477711cbf9")}
+            controls
+            muted
+            loop
+
+            // autoPlay
+          ></video>
+
       </main>
 
       <footer className={styles.footer}>
