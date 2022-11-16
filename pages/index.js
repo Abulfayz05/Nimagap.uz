@@ -84,6 +84,15 @@ export default function Home({ data }) {
 
             // autoPlay
           ></video>
+                        <video
+            poster={getAssetURL("edd4112e-68fe-405f-87c2-d78113465d54")}
+            src="/3qims.mp4"
+            controls
+            muted
+            loop
+
+            // autoPlay
+          ></video>
 
       </main>
 
