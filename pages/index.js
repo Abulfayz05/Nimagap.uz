@@ -68,7 +68,16 @@ export default function Home({ data }) {
         <h4>Manba: O&apos;zbekiston Respublikasi Markaziy banki </h4>
         <video
             poster={getAssetURL("edd4112e-68fe-405f-87c2-d78113465d54")}
-            src={getAssetURL("6f95d5eb-aca2-4948-b626-d0477711cbf9")}
+            src={getAssetURL("70b7a076-a578-4ef6-9ae3-4958da12bc24")}
+            controls
+            muted
+            loop
+
+            // autoPlay
+          ></video>
+               <video
+            poster={getAssetURL("edd4112e-68fe-405f-87c2-d78113465d54")}
+            src="/socail"
             controls
             muted
             loop
